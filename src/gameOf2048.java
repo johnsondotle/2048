@@ -390,7 +390,7 @@ class gameOf2048 {
             for (int var2w = 0; var2w <= 3; var2w++) {
                 if (winCheck[var1w][var2w] == 2048) // If any variable is 2048 then you win (1 is returned)
                 {
-                    System.out.println("YOU WIN, but continue playing");
+                    System.out.println("YOU WIN, play again!");
                     return (1);
                 }
             }
@@ -414,7 +414,7 @@ class gameOf2048 {
             }
         }
         if (counter == 0) {
-            System.out.println("YOU LOSE, sorry");
+            System.out.println("YOU LOSE, try again!");
             return (1);
         }
         return (0);
